@@ -60,8 +60,8 @@ getTechStackInformation will return “core Java” <br>
 <p> Department. (SuperDepartment will act as a super class for all the departments) </p>
 
 ### Expected Output
-> Welcome to Admin Department
-Complete your documents submission
+> Welcome to Admin Department <br>
+Complete your documents submission <br>
 Complete by EOD
 Today is not a Holiday
 Welcome to HR Department
