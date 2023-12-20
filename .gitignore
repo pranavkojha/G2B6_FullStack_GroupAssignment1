@@ -2,6 +2,8 @@
 *.class
 
 ### IntelliJ IDEA ###
+.idea
+G2B6_FullStack_GroupAssignment1/.idea
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
