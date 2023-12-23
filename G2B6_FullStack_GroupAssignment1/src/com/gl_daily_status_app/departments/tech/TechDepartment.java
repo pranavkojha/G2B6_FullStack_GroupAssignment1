@@ -1,6 +1,6 @@
 package com.gl_daily_status_app.departments.tech;
 
-import com.gl_daily_status_app.departments.SuperDepartment;
+import com.gl_daily_status_app.departments.superClass.SuperDepartment;
 
 public class TechDepartment extends SuperDepartment{
 	public String departmentName() {

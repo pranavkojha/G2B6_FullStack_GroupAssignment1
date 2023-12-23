@@ -1,12 +1,17 @@
 package com.gl_daily_status_app;
 
 import com.gl_daily_status_app.departments.tech.TechDepartment;
+import com.gl_daily_status_app.departments.superClass.SuperDepartment;
+import com.gl_daily_status_app.departments.hr.HrDepartment;
+import com.gl_daily_status_app.departments.admin.AdminDepartment;
 
 public class Main {
     
     public static void main(String[] args) {
-//        testSuperClass();
+        testSuperClass();
         testTechDepartment();
+        testHrClass();
+        testAdminClass();
     }
     
     private static void testTechDepartment() {
@@ -16,15 +21,39 @@ public class Main {
 		System.out.println(tech.getTodaysWork());
 		System.out.println(tech.departmentName());
 		System.out.println(tech.isTodayAHoliday());
-		
+        System.out.println("++++++++++++++");
 	}
 
-//	public static void testSuperClass() {
-//        SuperDepartment s = new SuperDepartment();
-//        System.out.println("Department Name: " + s.departmentName());
-//        System.out.println("Holiday?       : " + s.isTodayAHoliday());
-//        System.out.println("Today's work   : " + s.getTodaysWork());
-//        System.out.println("Work deadline  : " + s.getWorkDeadline());
-//    }
- 
+	public static void testSuperClass() {
+        SuperDepartment s = new SuperDepartment();
+        System.out.println("Department Name: " + s.departmentName());
+        System.out.println("Holiday?       : " + s.isTodayAHoliday());
+        System.out.println("Today's work   : " + s.getTodaysWork());
+        System.out.println("Work deadline  : " + s.getWorkDeadline());
+        System.out.println("++++++++++++++");
+    }
+
+    public static void testHrClass() {
+        //Creating an instance of HrDepartment
+        HrDepartment hrDepartment = new HrDepartment();
+
+        //Calling the methods and printing the results
+        System.out.println("Department Name: " + hrDepartment.departmentName());
+        System.out.println("Today's Work: " + hrDepartment.getTodaysWork());
+        System.out.println("Work Deadline: " + hrDepartment.getWorkDeadline());
+        System.out.println("Activity: " + hrDepartment.doActivity());
+        System.out.println("++++++++++++++");
+    }
+
+    public static void testAdminClass() {
+        //Creating an instance of HrDepartment
+        AdminDepartment admin = new AdminDepartment();
+
+        //Calling the methods and printing the results
+        System.out.println("Department Name: " + admin.departmentName());
+        System.out.println("Today's Work: " + admin.getTodaysWork());
+        System.out.println("Work Deadline: " + admin.getWorkDeadline());
+        System.out.println("Activity: " + admin.getWorkDeadline());
+        System.out.println("++++++++++++++");
+    }
 }

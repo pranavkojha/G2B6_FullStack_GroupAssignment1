@@ -1,3 +1,5 @@
+package com.gl_daily_status_app.departments.superClass;
+
 public class SuperDepartment {
     public String departmentName() {
         return "Super Department";
