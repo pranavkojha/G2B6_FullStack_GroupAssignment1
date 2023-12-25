@@ -1,7 +1,5 @@
 /** Great Learning Fullstack group assignment 1
- * Authors:
- *      1. Pranav Kumar Ojha
- *      2.
+ * @author Pranav Kumar Ojha, Faisal Raza Khan, Haritha, Shreya Singh, Prajna
  */
 
 package com.gl_daily_status_app;
