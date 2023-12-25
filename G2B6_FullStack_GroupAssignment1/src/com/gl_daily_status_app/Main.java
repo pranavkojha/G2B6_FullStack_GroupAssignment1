@@ -1,14 +1,18 @@
+/** Great Learning Fullstack group assignment 1
+ * Authors:
+ *      1. Pranav Kumar Ojha
+ *      2.
+ */
+
 package com.gl_daily_status_app;
 
 import com.gl_daily_status_app.departments.tech.TechDepartment;
-import com.gl_daily_status_app.departments.superClass.SuperDepartment;
 import com.gl_daily_status_app.departments.hr.HrDepartment;
 import com.gl_daily_status_app.departments.admin.AdminDepartment;
 
 public class Main {
     
     public static void main(String[] args) {
-        testSuperClass();
         testTechDepartment();
         testHrClass();
         testAdminClass();
@@ -23,15 +27,6 @@ public class Main {
 		System.out.println(tech.isTodayAHoliday());
         System.out.println("++++++++++++++");
 	}
-
-	public static void testSuperClass() {
-        SuperDepartment s = new SuperDepartment();
-        System.out.println("Department Name: " + s.departmentName());
-        System.out.println("Holiday?       : " + s.isTodayAHoliday());
-        System.out.println("Today's work   : " + s.getTodaysWork());
-        System.out.println("Work deadline  : " + s.getWorkDeadline());
-        System.out.println("++++++++++++++");
-    }
 
     public static void testHrClass() {
         //Creating an instance of HrDepartment
