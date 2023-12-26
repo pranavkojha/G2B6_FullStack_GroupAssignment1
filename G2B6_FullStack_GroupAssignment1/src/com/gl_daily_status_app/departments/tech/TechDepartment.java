@@ -8,7 +8,7 @@ import com.gl_daily_status_app.departments.superClass.SuperDepartment;
  */
 public class TechDepartment extends SuperDepartment {
 	/**
-	 * Method to department name
+	 * Method to get department name
 	 */
 	@Override
 	public String departmentName() {
@@ -16,7 +16,7 @@ public class TechDepartment extends SuperDepartment {
 	}
 
 	/**
-	 * Method to return today's work
+	 * Method to get today's work
 	 */
 	@Override
 	public String getTodaysWork() {
@@ -24,7 +24,7 @@ public class TechDepartment extends SuperDepartment {
 	}
 
 	/**
-	 * Method to return work deadline
+	 * Method to get work deadline
 	 */
 	@Override
 	public String getWorkDeadline() {
@@ -33,7 +33,6 @@ public class TechDepartment extends SuperDepartment {
 
 	/**
 	 * Class specific method to give tech stack information
-	 * 
 	 * @return
 	 */
 	public String getTechStackInformation() {
