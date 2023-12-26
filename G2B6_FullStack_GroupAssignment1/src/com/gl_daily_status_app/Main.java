@@ -9,11 +9,34 @@ import com.gl_daily_status_app.departments.hr.HrDepartment;
 import com.gl_daily_status_app.departments.admin.AdminDepartment;
 
 public class Main {
+	public void init() {
+		TechDepartment tech = new TechDepartment();
+		AdminDepartment admn = new AdminDepartment();
+		HrDepartment hr = new HrDepartment();
+		System.out.println("Welcome to "+tech.departmentName());
+		System.out.println(tech.getTodaysWork());
+		System.out.println(tech.getWorkDeadline());
+		System.out.println(tech.getTechStackInformation());
+		System.out.println(tech.isTodayAHoliday());
+        System.out.println("++++++++++++++");
+        System.out.println("Department Name: " + hr.departmentName());
+        System.out.println("Today's Work: " + hr.getTodaysWork());
+        System.out.println("Work Deadline: " + hr.getWorkDeadline());
+        System.out.println("Activity: " + hr.doActivity());
+        System.out.println("++++++++++++++");
+        System.out.println("Department Name: " + admn.departmentName());
+        System.out.println("Today's Work: " + admn.getTodaysWork());
+        System.out.println("Work Deadline: " + admn.getWorkDeadline());
+        System.out.println("Activity: " + admn.getWorkDeadline());
+        System.out.println("++++++++++++++");       
+	}
     
     public static void main(String[] args) {
-        testTechDepartment();
-        testHrClass();
-        testAdminClass();
+    	Main obj = new Main();
+    	obj.init();
+//        testTechDepartment();
+//        testHrClass();
+//        testAdminClass();
     }
     
     private static void testTechDepartment() {
