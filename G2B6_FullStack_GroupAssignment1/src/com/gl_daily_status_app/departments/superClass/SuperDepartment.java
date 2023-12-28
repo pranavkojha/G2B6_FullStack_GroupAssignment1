@@ -7,6 +7,8 @@
 
 package com.gl_daily_status_app.departments.superClass;
 
+
+
 /**
  * This abstract class defined method to be defined by all departments.
  *
@@ -48,4 +50,6 @@ public abstract class SuperDepartment {
 	public String isTodayAHoliday() {
 		return "Today is not a holiday";
 	}
+
+	
 }
