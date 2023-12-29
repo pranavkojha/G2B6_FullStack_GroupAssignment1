@@ -39,4 +39,16 @@ public class TechDepartment extends SuperDepartment {
 		return "Core Java";
 	}
 
+
+	public void testTechDepartment() {
+       // TechDepartment tech = new TechDepartment();
+		System.out.println("Welcome to "+departmentName());
+		System.out.println(getTodaysWork());
+		System.out.println(getWorkDeadline());
+		System.out.println(getTechStackInformation());
+		System.out.println(isTodayAHoliday());
+        System.out.println("++++++++++++++");
+    }
+	
+
 }

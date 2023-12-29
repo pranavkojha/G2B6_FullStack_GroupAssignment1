@@ -31,4 +31,15 @@ public class AdminDepartment extends SuperDepartment{
 		return getWorkDeadline;
 	} 
 
+	public  void testAdminClass() {
+        //Creating an instance of HrDepartment
+       // AdminDepartment admin = new AdminDepartment();
+
+        System.out.println("Welcome to " + departmentName());
+        System.out.println( getTodaysWork());
+        System.out.println( getWorkDeadline());
+        System.out.println(isTodayAHoliday());
+        System.out.println("++++++++++++++");
+    }
+
 }
