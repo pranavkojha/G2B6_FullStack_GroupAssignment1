@@ -15,9 +15,12 @@ public class driverClass {
     	AdminDepartment obj2 = new AdminDepartment();
         HrDepartment obj3 = new HrDepartment();
         TechDepartment obj4 = new TechDepartment();
-        obj2.testAdminClass();        
+        obj2.testAdminClass();
+        System.out.println("");
         obj3.testHrClass();
+        System.out.println("");
         obj4.testTechDepartment();
+        System.out.println("");
     } 
  
    
