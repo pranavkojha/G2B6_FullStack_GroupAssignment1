@@ -5,7 +5,7 @@
 
 // Package name.
 
-package com.gl_daily_status_app.departments.superClass;
+package com.gl_daily_status_app.departments.superdepartment;
 
 
 
