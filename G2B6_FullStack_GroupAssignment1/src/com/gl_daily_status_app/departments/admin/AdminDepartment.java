@@ -3,7 +3,12 @@ package com.gl_daily_status_app.departments.admin;
 import com.gl_daily_status_app.departments.superClass.SuperDepartment;
 
 public class AdminDepartment extends SuperDepartment{
-	
+
+	/**
+	 * Department name.
+	 *
+	 * @return This method returns the department name as String.
+	 */
 	@Override
 	public String departmentName()
 	{
@@ -11,8 +16,13 @@ public class AdminDepartment extends SuperDepartment{
 		String departmentName="Admin Department";
 		
 		return departmentName;
-	} 
-	
+	}
+
+	/**
+	 * Get Today's work.
+	 *
+	 * @return This method returns the today's work String.
+	 */
 	@Override
 	public String getTodaysWork()
 	{
@@ -20,8 +30,13 @@ public class AdminDepartment extends SuperDepartment{
 		String getTodaysWork="Complete your documents Submission";
 		
 		return getTodaysWork;
-	} 
-	
+	}
+
+	/**
+	 * Work deadline.
+	 *
+	 * @return This method returns the work's deadline as String.
+	 */
 	@Override
 	public String getWorkDeadline()
 	{
@@ -29,8 +44,11 @@ public class AdminDepartment extends SuperDepartment{
 		String getWorkDeadline="Complete by EOD";
 		
 		return getWorkDeadline;
-	} 
+	}
 
+	/**
+	 * This method is used to test the Admin department.
+	 */
 	public  void testAdminClass() {
         //Creating an instance of HrDepartment
        // AdminDepartment admin = new AdminDepartment();

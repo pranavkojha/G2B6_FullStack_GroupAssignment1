@@ -3,19 +3,31 @@ package com.gl_daily_status_app.departments.hr;
 import com.gl_daily_status_app.departments.superClass.SuperDepartment;
 public class HrDepartment extends SuperDepartment{
 
-    // Method to return department name
+    /**
+     * Department name.
+     *
+     * @return This method returns the department name as String.
+     */
     @Override
     public String departmentName() {
-        return "Hr Department";
+        return "HR Department";
     }
 
-    // Method to return today's work
+    /**
+     * Get Today's work.
+     *
+     * @return This method returns the today's work String.
+     */
     @Override
     public String getTodaysWork() {
         return "Fill today"+"'"+"s timesheet and mark your attendance";
     }
 
-    // Method to return work deadline
+    /**
+     * Work deadline.
+     *
+     * @return This method returns the work's deadline as String.
+     */
     @Override
     public String getWorkDeadline() {
         return "Complete by EOD";
@@ -26,6 +38,9 @@ public class HrDepartment extends SuperDepartment{
         return "Team Lunch";
     }
 
+    /**
+     * This method is used to test the HR department.
+     */
     public  void testHrClass() {
         //Creating an instance of HrDepartment
         HrDepartment hrDepartment = new HrDepartment();

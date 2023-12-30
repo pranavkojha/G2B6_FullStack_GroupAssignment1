@@ -1,3 +1,6 @@
+/**
+ * @author Faisalraza
+ */
 package com.gl_daily_status_app.departments.tech;
 
 import com.gl_daily_status_app.departments.superClass.SuperDepartment;
@@ -8,7 +11,9 @@ import com.gl_daily_status_app.departments.superClass.SuperDepartment;
  */
 public class TechDepartment extends SuperDepartment {
 	/**
-	 * Method to get department name
+	 * Method to get department name.
+	 *
+	 * @return This method returns the department name as String.
 	 */
 	@Override
 	public String departmentName() {
@@ -16,7 +21,9 @@ public class TechDepartment extends SuperDepartment {
 	}
 
 	/**
-	 * Method to get today's work
+	 * Method to get today's work.
+	 *
+	 * @return This method returns the today's work String.
 	 */
 	@Override
 	public String getTodaysWork() {
@@ -25,6 +32,8 @@ public class TechDepartment extends SuperDepartment {
 
 	/**
 	 * Method to get work deadline
+	 *
+	 * @return This method returns the work's deadline as String.
 	 */
 	@Override
 	public String getWorkDeadline() {
@@ -32,23 +41,25 @@ public class TechDepartment extends SuperDepartment {
 	}
 
 	/**
-	 * Class specific method to give tech stack information
-	 * @return
+	 * Class specific method to give tech stack information.
+	 *
+	 * @return String about the tech stack used in this department.
 	 */
 	public String getTechStackInformation() {
 		return "Core Java";
 	}
 
 
+	/**
+	 * This method is used to test the Tech department.
+	 */
 	public void testTechDepartment() {
-       // TechDepartment tech = new TechDepartment();
+		// TechDepartment tech = new TechDepartment();
 		System.out.println("Welcome to "+departmentName());
 		System.out.println(getTodaysWork());
 		System.out.println(getWorkDeadline());
 		System.out.println(getTechStackInformation());
 		System.out.println(isTodayAHoliday());
-        System.out.println("++++++++++++++");
-    }
-	
-
+		System.out.println("++++++++++++++");
+	}
 }
